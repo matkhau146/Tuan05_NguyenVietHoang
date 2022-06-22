@@ -27,7 +27,7 @@
             <td> @String.Format("{0:0,0}", item.giaban) VND</td>
             <td> <input type="number" min="1" name="txtSoLg" value="@item.iSoluong" /></td>
             <td> @Html.DisplayFor(modeItem => item.dThanhtien) </td>
-            <td> <a href="@Url.Action("Detail", "Sach", new { id = item.masach})">Chi Tiet</a> | @Html.ActionLink("Xóa", "XoaioHang", new { @id = item.masach})
+            <td> <a href="@Url.Action("Detail", "Sach", new { id = item.masach})">Chi Tiet</a> | @Html.ActionLink("Xóa", "XoagioHang", new { @id = item.masach})
             </td>
             <td> <input type="submit" name="btn btn-success" value="Cập nhật" /></td>
         }
@@ -36,7 +36,7 @@
 <tr style="font-weight:bold; text-align: left; color:red">
     <td colspan="2"> Số loại sách: @ViewBag.Tongsoluongsanpham </td>
     <td colspan="2"> Số lượng sách: @ViewBag.Tongsoluong</td>
-    <td colspan="4"> Tổng tiền: @String.Format("{0:0,0", ViewBag.Tongtien) VND </td>
+    <td colspan="4"> Tổng tiền: @String.Format("{0:0,0}", ViewBag.Tongtien) VND </td>
 </tr>
 
     <tr style="font-weight: bold; color: dodgerblue; text-align: right">
